@@ -7,7 +7,7 @@ const Us = () => {
       <div className="container">
         <h2>Sobre Nosotros</h2>
         <p>
-          Somos un broker de seguros con más de 10 años de trayectoria brindando soluciones integrales a productores en todo el país. Nuestro equipo está conformado por profesionales con más de 30 años de experiencia en el sector, que han trabajado en compañías líderes y conocen en profundidad las dinámicas del mercado asegurador.
+          Somos una organización de seguros con más de 15 años de trayectoria brindando soluciones integrales a productores en todo el país. Nuestro equipo está conformado por profesionales con más de 30 años de experiencia en el sector, que han trabajado en compañías líderes y conocen en profundidad las dinámicas del mercado asegurador.
         </p>
         <p>
           Esta base sólida nos permite ofrecer un servicio cercano, eficiente y adaptado a las necesidades reales de quienes producen seguros. 
