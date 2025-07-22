@@ -1,0 +1,122 @@
+.footer {
+  background-color: #000e4d;
+  color: white;
+  padding: 3rem 2rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 1rem;
+  text-align: left;
+}
+
+.footer-left {
+  flex: 1 1 250px;
+  margin-right: 1rem;
+}
+
+.footer-logo {
+  width: 140px;
+  margin-bottom: 1rem;
+}
+
+.footer-left p {
+  margin: 0.6rem 0;
+  font-size: 0.95rem;
+}
+
+.footer-right {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.footer-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-social a {
+  color: white;
+  font-size: 1.4rem;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #7abfff;
+}
+
+.footer-bottom {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+.footer-map {
+  flex: 0 0 200px;      /* ancho fijo 450px */
+ width: 450px;
+  height: 280px;        /* alto fijo 280px */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+}
+
+.footer-map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .footer-map {
+    flex: 1 1 100%;     /* en móvil que tome todo el ancho */
+    max-width: 100%;
+    height: 180px;      /* alto más pequeño en móvil */
+    margin-top: 1rem;
+  }
+}
+
+
+
+
+/* MOBILE FIX */
+@media (max-width: 600px) {
+  .footer {
+    padding: 2rem 1rem 1rem; /* reducimos el padding */
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem; /* juntamos las columnas */
+  }
+
+  .footer-left,
+  .footer-right {
+    margin: 0;
+    width: 100%;
+    align-items: center !important;
+  }
+
+  .footer-social {
+    justify-content: center;
+    margin-bottom: 0; /* aseguramos que no haya espacio abajo */
+  }
+
+  .footer-bottom {
+    margin-top: 0.5rem;
+  }
+}

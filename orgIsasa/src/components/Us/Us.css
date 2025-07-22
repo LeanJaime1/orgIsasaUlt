@@ -1,0 +1,93 @@
+.us-section {
+  background-color: #ffffff;
+  color: #003366;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh; /* un poco menos de altura mínima */
+}
+
+
+.us-section .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.us-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: #003366;
+}
+
+.us-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  color: #004080;
+}
+
+
+@media (max-width: 600px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .us-section {
+    display: block;
+    min-height: auto;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+}
+
+
+.us-section {
+  background-color: #ffffff;
+  color: #003366;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 3rem 2rem;
+  min-height: 50vh;
+  scroll-margin-top: 90px; /* Para evitar que el header tape contenido */
+}
+
+.us-section .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.us-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: #003366;
+}
+
+.us-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  color: #004080;
+}
+
+@media (max-width: 600px) {
+  .us-section {
+    display: block; /* Evita problemas con flex en pantallas chicas */
+    padding: 2rem 1rem;
+    min-height: auto;
+    text-align: center;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+}

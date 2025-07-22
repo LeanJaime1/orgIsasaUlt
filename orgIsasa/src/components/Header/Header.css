@@ -1,0 +1,131 @@
+/* --- FUENTES --- */
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, .nav-links a {
+  font-family: Georgia, serif;
+}
+
+/* --- HEADER GENERAL --- */
+.header {
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+
+  /* 👇 Define altura explícita del header para usar con scroll-margin-top */
+  height: 80px;
+}
+
+/* --- LOGO --- */
+.logo img {
+  height: 70px;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.03);
+}
+
+/* --- NAVEGACIÓN --- */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+}
+
+.nav-links a {
+  color: #000e4d;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #0066cc;
+}
+
+/* --- MENU TOGGLE --- */
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #003366;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.close-icon {
+  font-size: 28px;
+  color: #003366;
+  font-weight: bold;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 80px; /* altura del header */
+    right: 0; /* cambia left:0 a right:0 para que el nav se posicione en la derecha */
+    width: 200px; /* ancho fijo para el menú */
+    background-color: #ffffff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    z-index: 99;
+    border-left: 1px solid #ccc; /* opcional, para separar */
+    border-bottom-left-radius: 8px; /* opcional, para mejor look */
+  }
+
+  .nav.open {
+    max-height: 400px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start; /* alinea links al inicio (izquierda) dentro del menú derecho */
+    padding: 1rem 1.5rem;
+    gap: 1rem;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    text-align: left; /* texto a la izquierda dentro del menú */
+    width: 100%;
+    font-size: 1.05rem;
+    padding: 0.3rem 0;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+}
